@@ -18,7 +18,7 @@
             <li><a  class="nav-link projects" href="#projects">Projects</a></li>
             <li><a href="#github-statistics">Statistics</a></li>
             <li><a  class="nav-link contact" href="#contact">Contact</a></li>
-            <li><a onclick="window.open('./assets/portfolio.pdf')" target="_blank" >Resume</a></li>
+            <li><a class="nav-link resume"  id="resume-link-1" href="./assets/portfolio.pdf" target="_blank" download>Resume</a></li>
           </ul>
         </div>
       </nav>
@@ -31,13 +31,13 @@
             <span></span>
           </div>
           <div class="menu-links">
-            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a class="nav-link home" href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a class="nav-link about" href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a class="nav-link skills" href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a class="nav-link projects" href="#projects" onclick="toggleMenu()">Projects</a></li>
             <li><a href="#github-statistics">Statistics</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            <li><a onclick="window.open('./assets/portfolio.pdf')" target="_blank" style="cursor: pointer;">Resume</a></li>
+            <li><a class="nav-link contact" href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li><a id="resume-link" class="nav-link resume" href="./assets/portfolio.pdf" target="_blank" download>Resume</a></li>
           </div>
         </div>
       </nav>
@@ -52,8 +52,8 @@
           <p class="section__text__p2">Backend Developer</p>
           <div class="btn-container">
             <button
+            id="resume-button-2"
               class="btn btn-color-2"
-              onclick="window.open('./assets/portfolio.pdf', '_blank')"
             >
               Download CV
             </button>
@@ -79,7 +79,7 @@
       </section>
 
       <!-- ABOUT US -->
-      <section id="about">
+      <section id="about" class="about section">
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
@@ -98,8 +98,8 @@ Hello, I'm Mohd Khalid, a Backend Developer proficient in JavaScript, Java, CSS,
               </p>
             </div>
             <button
+            id="resume-button"
             class="btn btn-color-2"
-            onclick="window.open('./assets/portfolio.pdf')"
             style="margin-top: 4rem;"
           >
             Download CV
