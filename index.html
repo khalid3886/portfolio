@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="nav-menu">
+        <div class="logo">Khalid.</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#github-statistics">Git</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a onclick="window.open('./assets/portfolio.pdf')" target="_blank" >Resume</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Khalid</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#github-statistics">Git</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li><a onclick="window.open('./assets/portfolio.pdf')" target="_blank" style="cursor: pointer;">Resume</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="home">
+        <div class="section__pic-container">
+          <img src="./assets/coding.gif" alt="gif" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, My name is</p>
+          <h1 class="title">Mohd <span style="color: red;">Khalid</span></h1>
+          <p class="section__text__p1">& I'm a</p>
+          <p class="section__text__p2">Backend Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/portfolio.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="window.open('https://linkedin.com/')"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My github profile"
+              class="icon"
+              onclick="window.open('https://linkedin.com/')"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT US -->
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/profile.jpg"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="text-container">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+                reprehenderit et laborum, rem, dolore eum quod voluptate
+                exercitationem nobis, nihil esse debitis maxime facere minus sint
+                delectus velit in eos quo officiis explicabo deleniti dignissimos.
+                Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+                reiciendis ea magnam? Nulla, impedit fuga!
+              </p>
+            </div>
+            <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/portfolio.pdf')"
+            style="margin-top: 4rem;"
+          >
+            Download CV
+          </button>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Experience -->
+      <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-container">
+          <div class="skill-icon" data-skill="HTML">
+            <img src="./assets/html.png" alt="HTML">
+            <p>HTML</p>
+        </div>
+        <div class="skill-icon" data-skill="CSS">
+            <img src="./assets/css.png" alt="CSS">
+            <p>CSS</p>
+        </div>
+        <div class="skill-icon" data-skill="JavaScript">
+            <img src="./assets/js.png" alt="JavaScript">
+            <p>JavaScript</p>
+        </div>
+        <div class="skill-icon" data-skill="Java">
+            <img src="./assets/java.png" alt="Java">
+            <p>Java</p>
+        </div>
+        <div class="skill-icon" data-skill="MongoDB">
+            <img src="./assets/mongo-db.png" alt="MongoDB">
+            <p>MongoDB</p>
+        </div>
+        <div class="skill-icon" data-skill="MySQL">
+            <img src="./assets/mysql.png" alt="MySQL">
+            <p>MySQL</p>
+        </div>
+        <div class="skill-icon" data-skill="Git">
+          <img src="./assets/git.png" alt="Git">
+          <p>Git</p>
+      </div>
+      <div class="skill-icon" data-skill="NodeJS">
+        <img src="./assets/nodejs.png" alt="NodeJS">
+        <p>NodeJS</p>
+    </div>
+        </div>
+    </section>
+   
+
+
+
+
+
+     <!-- projects -->
+     <div id="project">
+      <p>Browse my</p>
+      <h1>Projects</h1>
+      <div class="wrapper">
+          <div class="card">
+              <img src="./assets/project2.png" alt="Project1">
+             <div class="icon-container">
+              <img style="margin-left: 2rem;" src="./assets/html.png" alt="Icon">
+              <img style="margin-left: 4rem;" src="./assets/css.png" alt="Icon">
+              <img src="./assets/js.png" alt="Icon">
+             </div>
+              <div class="info">
+                  <h1>Wonder Wave Travels</h1>
+                  <p>WonderWave Travels is a responsive website which offers travellers the best India Tour packages, where they can tour almost every part of India with the hand-picked packages given on the website. The website is built using HTML, CSS, and JavaScript during our construct week.</p>
+                  <button  onclick="openLinkInNewTab('https://github.com/OraonShivam21/quantum-script-1432')">Github</button>
+                  <button  onclick="openLinkInNewTab('https://tangerine-taffy-c13797.netlify.app/')">Live Demo</button>
+              </div>
+          </div>
+          <div class="card">
+              <img src="./assets/project1.png" alt="project2">
+             <div class="icon-container">
+              <img style="margin-left: 2rem;" src="./assets/css.png" alt="Icon">
+              <img style="margin-left: 4rem;" src="./assets/js.png" alt="Icon">
+              <img style="margin-left: 6rem;" src="./assets/nodejs.png" alt="Icon">
+              <img  src="./assets/mongo-db.png" alt="Icon">
+             </div>
+              <div class="info">
+                  <h1>Wonder Wave Travels</h1>
+                  <p>WonderWave Travels is a responsive website which offers travellers the best India Tour packages, where they can tour almost every part of India with the hand-picked packages given on the website. The website is built using HTML, CSS, and JavaScript during our construct week.</p>
+                  <button  onclick="openLinkInNewTab('https://github.com/OraonShivam21/quantum-script-1432')">Github</button>
+                  <button  onclick="openLinkInNewTab('https://tangerine-taffy-c13797.netlify.app/')">Live Demo</button>
+              </div>
+          </div>
+          <div class="card">
+              <img src="./assets/project3.png" alt="Project3">
+              <div class="icon-container">
+                <img class="icon" src="./assets/css.png" alt="Icon">
+              <img class="icon" src="./assets/html.png" alt="Icon">
+              <img class="icon" src="./assets/js.png" alt="Icon">
+              </div>
+              <div class="info">
+                  <h1>Wonder Wave Travels</h1>
+                  <p>WonderWave Travels is a responsive website which offers travellers the best India Tour packages, where they can tour almost every part of India with the hand-picked packages given on the website. The website is built using HTML, CSS, and JavaScript during our construct week.</p>
+                  <button  onclick="openLinkInNewTab('https://github.com/OraonShivam21/quantum-script-1432')">Github</button>
+                  <button  onclick="openLinkInNewTab('https://tangerine-taffy-c13797.netlify.app/')">Live Demo</button>
+              </div>
+          </div>
+          <!-- Repeat the card structure for other items -->
+          <!-- ... -->
+      </div>
+  </div>
+
+<!-- git stats -->
+<div id="github-statistics">
+ <div>
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Skills</h1>
+ </div>
+  <a class="git" id="github-streak-stats" href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=khalid3886" alt="GitHub Streak" /></a>
+  <img class="git" id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=khalid3886" alt="top-langs" />
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=khalid3886"
+    alt="github-stats"
+    id="github-stats-card"
+    class="git"
+  />
+</div>
+
+
+
+      <!-- contact -->
+      <section id="contact" style="height: 80vh;">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:mohdkhalid3886@gmail.com">mohdkhalid3886@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a onclick="window.open('https://linkedin.com/')">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#project">Projects</a></li>
+              <li><a href="#github-statistics">Git</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a onclick="window.open('./assets/portfolio.pdf')" target="_blank" >Resume</a></li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
+      <script src="script.js"></script>
+</body>
+</html>
