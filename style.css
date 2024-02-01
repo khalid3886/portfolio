@@ -620,7 +620,7 @@ margin-bottom: 2rem;
 }
  .skills-card{
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Display 4 columns in each row */
+  grid-template-columns: repeat(4, 1fr); /* Display 4 columns in each row */
   gap: 10px; /* Adjust the gap between icons as needed */
   justify-content: space-around;
   align-items: center;
