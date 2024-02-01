@@ -109,7 +109,7 @@
       width: 90%;
   }
 
-  .card {
+  .project-card {
       width: 45%;
       margin-bottom: 5%;
   }
@@ -121,16 +121,16 @@
       padding: 0 10px; /* Adjust as needed */
   }
 
-  .card {
+  .project-card {
       width: 100%;
       margin-bottom: 10px; /* Adjust as needed */
   }
 
-  .card .icon {
+  .project-card .icon {
       left: 10px; /* Adjust as needed */
   }
   
-  .card:nth-child(odd) {
+  .project-card:nth-child(odd) {
       clear: both; /* Start a new row for odd-numbered cards */
   }
 }

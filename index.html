@@ -12,12 +12,12 @@
         <div class="logo">Khalid.</div>
         <div>
           <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#project">Projects</a></li>
-            <li><a href="#github-statistics">Git</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a  class="nav-link home" href="#home">Home</a></li>
+            <li><a  class="nav-link about" href="#about">About</a></li>
+            <li><a  class="nav-link skills" href="#skills">Skills</a></li>
+            <li><a  class="nav-link projects" href="#projects">Projects</a></li>
+            <li><a href="#github-statistics">Statistics</a></li>
+            <li><a  class="nav-link contact" href="#contact">Contact</a></li>
             <li><a onclick="window.open('./assets/portfolio.pdf')" target="_blank" >Resume</a></li>
           </ul>
         </div>
@@ -34,8 +34,8 @@
             <li><a href="#home" onclick="toggleMenu()">Home</a></li>
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
             <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-            <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#github-statistics">Git</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#github-statistics">Statistics</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             <li><a onclick="window.open('./assets/portfolio.pdf')" target="_blank" style="cursor: pointer;">Resume</a></li>
           </div>
@@ -47,13 +47,13 @@
         </div>
         <div class="section__text">
           <p class="section__text__p1">Hello, My name is</p>
-          <h1 class="title">Mohd <span style="color: red;">Khalid</span></h1>
+          <h1 class="title" id="user-detail-name">Mohd <span style="color: red;">Khalid</span></h1>
           <p class="section__text__p1">& I'm a</p>
           <p class="section__text__p2">Backend Developer</p>
           <div class="btn-container">
             <button
               class="btn btn-color-2"
-              onclick="window.open('./assets/portfolio.pdf')"
+              onclick="window.open('./assets/portfolio.pdf', '_blank')"
             >
               Download CV
             </button>
@@ -87,12 +87,12 @@
             <img
               src="./assets/profile.jpg"
               alt="Profile picture"
-              class="about-pic"
+              class="home-img"
             />
           </div>
           <div class="about-details-container">
             <div class="text-container">
-              <p>
+              <p  id="user-detail-intro">
                 
 Hello, I'm Mohd Khalid, a Backend Developer proficient in JavaScript, Java, CSS, and HTML. My expertise extends to Node.js and Express.js, enabling me to build powerful, high-performance server-side applications. I bring a comprehensive approach to projects, combining strong UI/UX skills with a dedication to clean code and best practices. With a solid foundation in Java and a deep understanding of Data Structures and Algorithms (DSA), I tackle challenges with efficiency and precision. 
               </p>
@@ -113,54 +113,54 @@ Hello, I'm Mohd Khalid, a Backend Developer proficient in JavaScript, Java, CSS,
       <section id="skills">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Skills</h1>
-        <div class="skills-container">
+        <div class="skills-card">
           <div class="skill-icon" data-skill="HTML">
-            <img src="./assets/html.png" alt="HTML">
-            <p>HTML5</p>
+            <img class="skills-card-img" src="./assets/html.png" alt="HTML">
+            <p class="skills-card-name">HTML5</p>
         </div>
         <div class="skill-icon" data-skill="CSS">
-            <img src="./assets/css.png" alt="CSS">
-            <p>CSS3</p>
+            <img class="skills-card-img" src="./assets/css.png" alt="CSS">
+            <p class="skills-card-name">CSS3</p>
         </div>
         <div class="skill-icon" data-skill="JavaScript">
-            <img src="./assets/js.png" alt="JavaScript">
-            <p>JavaScript</p>
+            <img class="skills-card-img" src="./assets/js.png" alt="JavaScript">
+            <p class="skills-card-name">JavaScript</p>
         </div>
         <div class="skill-icon" data-skill="Java">
-            <img src="./assets/java.png" alt="Java">
-            <p>Java</p>
+            <img class="skills-card-img" src="./assets/java.png" alt="Java">
+            <p class="skills-card-name">Java</p>
         </div>
         <div class="skill-icon" data-skill="MongoDB">
-            <img src="./assets/mongo-db.png" alt="MongoDB">
-            <p>MongoDB</p>
+            <img class="skills-card-img" src="./assets/mongo-db.png" alt="MongoDB">
+            <p class="skills-card-name">MongoDB</p>
         </div>
         <div class="skill-icon" data-skill="MySQL">
-            <img src="./assets/mysql.png" alt="MySQL">
-            <p>MySQL</p>
+            <img class="skills-card-img" src="./assets/mysql.png" alt="MySQL">
+            <p class="skills-card-name">MySQL</p>
         </div>
         <div class="skill-icon" data-skill="Git">
-          <img src="./assets/git.png" alt="Git">
-          <p>Github</p>
+          <img class="skills-card-img" src="./assets/git.png" alt="Git">
+          <p class="skills-card-name">Github</p>
       </div>
       <div class="skill-icon" data-skill="NodeJS">
-        <img src="./assets/nodejs.png" alt="NodeJS">
-        <p>Node.js</p>
+        <img class="skills-card-img" src="./assets/nodejs.png" alt="NodeJS">
+        <p class="skills-card-name">Node.js</p>
     </div>
     <div class="skill-icon" data-skill="VS Code">
-      <img src="./assets/vs.png" alt="VS Code">
-      <p>VS code</p>
+      <img class="skills-card-img" src="./assets/vs.png" alt="VS Code">
+      <p class="skills-card-name">VS code</p>
   </div>
   <div class="skill-icon" data-skill="Express.js">
-    <img src="./assets/express.png" alt="Express.js">
-    <p>Express.js</p>
+    <img class="skills-card-img" src="./assets/express.png" alt="Express.js">
+    <p class="skills-card-name">Express.js</p>
 </div>
 <div class="skill-icon" data-skill="Netlify">
-  <img src="./assets/netlify.png" alt="Netlify">
-  <p>Netlify</p>
+  <img class="skills-card-img" src="./assets/netlify.png" alt="Netlify">
+  <p class="skills-card-name">Netlify</p>
 </div>
 <div class="skill-icon" data-skill="Vercel">
-  <img src="./assets/vercel.png" alt="Vercel">
-  <p>Vercel</p>
+  <img class="skills-card-img" src="./assets/vercel.png" alt="Vercel">
+  <p class="skills-card-name">Vercel</p>
 </div>
         </div>
     </section>
@@ -171,51 +171,51 @@ Hello, I'm Mohd Khalid, a Backend Developer proficient in JavaScript, Java, CSS,
 
 
      <!-- projects -->
-     <div id="project">
+     <div id="projects">
       <p>Browse my</p>
       <h1>Projects</h1>
       <div class="wrapper">
-          <div class="card">
+          <div class="project-card">
               <img src="./assets/project2.png" alt="Project1">
-             <div class="icon-container">
+             <div class="project-tech-stack">
               <img style="margin-left: 2rem;" src="./assets/html.png" alt="Icon">
               <img style="margin-left: 4rem;" src="./assets/css.png" alt="Icon">
               <img src="./assets/js.png" alt="Icon">
              </div>
               <div class="info">
-                  <h1>Wonder Wave Travels</h1>
-                  <p>WonderWave Travels is a responsive website which offers travellers the best India Tour packages, where they can tour almost every part of India with the hand-picked packages given on the website. The website is built using HTML, CSS, and JavaScript during our construct week.</p>
-                  <button  onclick="openLinkInNewTab('https://github.com/OraonShivam21/quantum-script-1432')">Github</button>
-                  <button  onclick="openLinkInNewTab('https://tangerine-taffy-c13797.netlify.app/')">Live Demo</button>
+                  <h1 class="project-title">Wonder Wave Travels</h1>
+                  <p class="project-description">WonderWave Travels is a responsive website which offers travellers the best India Tour packages, where they can tour almost every part of India with the hand-picked packages given on the website. The website is built using HTML, CSS, and JavaScript during our construct week.</p>
+                  <button class="project-github-link" onclick="openLinkInNewTab('https://github.com/khalid3886/wonderwave-travels')">Github</button>
+                  <button class="project-deployed-link" onclick="openLinkInNewTab('https://tangerine-taffy-c13797.netlify.app/')">Live Demo</button>
               </div>
           </div>
-          <div class="card">
+          <div class="project-card">
               <img src="./assets/project1.png" alt="project2">
-             <div class="icon-container">
+             <div class="project-tech-stack">
               <img style="margin-left: 2rem;" src="./assets/css.png" alt="Icon">
-              <img style="margin-left: 4rem;" src="./assets/js.png" alt="Icon">
-              <img style="margin-left: 6rem;" src="./assets/nodejs.png" alt="Icon">
+              <img style="margin-left: 6rem;" src="./assets/js.png" alt="Icon">
+              <img style="margin-left: 8rem;" src="./assets/nodejs.png" alt="Icon">
+              <img style="margin-left: 4rem;" src="./assets/html.png" alt="Icon">
               <img  src="./assets/mongo-db.png" alt="Icon">
              </div>
               <div class="info">
-                  <h1>Wonder Wave Travels</h1>
-                  <p>WonderWave Travels is a responsive website which offers travellers the best India Tour packages, where they can tour almost every part of India with the hand-picked packages given on the website. The website is built using HTML, CSS, and JavaScript during our construct week.</p>
-                  <button  onclick="openLinkInNewTab('https://github.com/OraonShivam21/quantum-script-1432')">Github</button>
-                  <button  onclick="openLinkInNewTab('https://tangerine-taffy-c13797.netlify.app/')">Live Demo</button>
+                  <h1 class="project-title">Tracker Jet</h1>
+                  <p class="project-description">The Tracker Jet App is a responsive study tracking website designed to assist students in managing their assignments effectively. It offers an intuitive platform for improved time management.</p>
+                  <button class="project-github-link" onclick="openLinkInNewTab('https://github.com/khalid3886/tracker-jet-app')">Github</button>
+                  <button class="project-deployed-link" onclick="openLinkInNewTab('https://tracker-jet-app.vercel.app/')">Live Demo</button>
               </div>
           </div>
-          <div class="card">
+          <div class="project-card">
               <img src="./assets/project3.png" alt="Project3">
-              <div class="icon-container">
-                <img class="icon" src="./assets/css.png" alt="Icon">
+              <div class="project-tech-stack">
+                <img style="margin-left: 2rem;" class="icon" src="./assets/css.png" alt="Icon">
               <img class="icon" src="./assets/html.png" alt="Icon">
-              <img class="icon" src="./assets/js.png" alt="Icon">
               </div>
               <div class="info">
-                  <h1>Wonder Wave Travels</h1>
-                  <p>WonderWave Travels is a responsive website which offers travellers the best India Tour packages, where they can tour almost every part of India with the hand-picked packages given on the website. The website is built using HTML, CSS, and JavaScript during our construct week.</p>
-                  <button  onclick="openLinkInNewTab('https://github.com/OraonShivam21/quantum-script-1432')">Github</button>
-                  <button  onclick="openLinkInNewTab('https://tangerine-taffy-c13797.netlify.app/')">Live Demo</button>
+                  <h1 class="project-title">Vestal Trouble</h1>
+                  <p class="project-description">Vestral Trouble is a portfolio website, consisting details of company and the contact information of it.</p>
+                  <button class="project-github-link" onclick="openLinkInNewTab('https://github.com/khalid3886/vestal-trouble-683')">Github</button>
+                  <button class="project-deployed-link" onclick="openLinkInNewTab('https://vestal-trouble.netlify.app/')">Live Demo</button>
               </div>
           </div>
           <!-- Repeat the card structure for other items -->
@@ -226,8 +226,7 @@ Hello, I'm Mohd Khalid, a Backend Developer proficient in JavaScript, Java, CSS,
 <!-- git stats -->
 <div id="github-statistics">
  <div>
-  <p class="section__text__p1">Explore My</p>
-  <h1 class="title">Skills</h1>
+  <h1 class="title">Git Stats</h1>
  </div>
   <a class="git" id="github-streak-stats" href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=khalid3886" alt="GitHub Streak" /></a>
   <img class="git" id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=khalid3886" alt="top-langs" />
@@ -252,7 +251,7 @@ Hello, I'm Mohd Khalid, a Backend Developer proficient in JavaScript, Java, CSS,
               alt="Email icon"
               class="icon contact-icon email-icon"
             />
-            <p><a href="mailto:mohdkhalid3886@gmail.com">mohdkhalid3886@gmail.com</a></p>
+            <p><a  id="contact-email" href="mailto:mohdkhalid3886@gmail.com">mohdkhalid3886@gmail.com</a></p>
           </div>
           <div class="contact-info-container">
             <img
@@ -260,7 +259,25 @@ Hello, I'm Mohd Khalid, a Backend Developer proficient in JavaScript, Java, CSS,
               alt="LinkedIn icon"
               class="icon contact-icon"
             />
-            <p><a onclick="window.open('https://linkedin.com/')">LinkedIn</a></p>
+            <p><a id="contact-linkedin" onclick="window.open('https://www.linkedin.com/in/mohd-khalid-7a4339207/')">LinkedIn</a></p>
+          </div>
+        </div>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/github.png"
+              alt="GitHub icon"
+              class="icon contact-icon"
+            />
+            <p><a  id="contact-github"  onclick="window.open('https://github.com/khalid3886')">GitHub</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/phone.png"
+              alt="Phone icon"
+              class="icon contact-icon"
+            />
+            <p><a  id="contact-phone" href="tel:+91-9760674679">+91-9760674679</a></p>
           </div>
         </div>
       </section>
@@ -271,7 +288,7 @@ Hello, I'm Mohd Khalid, a Backend Developer proficient in JavaScript, Java, CSS,
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#skills">Skills</a></li>
-              <li><a href="#project">Projects</a></li>
+              <li><a href="#projects">Projects</a></li>
               <li><a href="#github-statistics">Git</a></li>
               <li><a href="#contact">Contact</a></li>
               <li><a onclick="window.open('./assets/portfolio.pdf')" target="_blank" >Resume</a></li>
