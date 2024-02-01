@@ -99,7 +99,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: rgb(101, 89, 89);
   transition: all 0.3 ease-in-out;
 }
 
